@@ -1,6 +1,6 @@
 # IdentityServer4 Concept
 
-本教程由 JeffckyWang（微软MVP、博客园知名博主、阿里云栖社区专家）录制与编写。
+本教程由 NCC 成员 [JeffckyWang](http://www.cnblogs.com/CreateMyself/) （微软MVP、博客园知名博主、阿里云栖社区专家）编写并录制。
 
 视频教程地址：https://space.bilibili.com/319652230/#/channel/detail?cid=39951
 
@@ -16,4 +16,4 @@
 
 ## 版权
 
-本系列教程版权归原作者所有，并授权 NCC 收录汇编。
+本系列教程由 NCC 出品，版权归原作者 [JeffckyWang](http://www.cnblogs.com/CreateMyself/) 所有。
