@@ -1,4 +1,4 @@
-# IdentityServer4 Concept
+# IdentityServer4 Course
 
 本教程由 NCC 成员 [JeffckyWang](http://www.cnblogs.com/CreateMyself/) （微软MVP、博客园知名博主、阿里云栖社区专家）编写并录制。
 
