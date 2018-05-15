@@ -1,0 +1,53 @@
+﻿
+@model LoginViewModel
+
+<div class="login-page">
+    <div class="page-header">
+        <h1>登录</h1>
+    </div>
+
+    @Html.Partial("_ValidationSummary")
+
+    <div class="row">
+
+        @if (Model.AllowRememberLogin)
+        {
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Local Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form asp-route="login">
+                            <input type="hidden" asp-for="ReturnUrl" />
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label asp-for="UserName"></label>
+                                    <input class="form-control" placeholder="Username" asp-for="UserName" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Password"></label>
+                                    <input type="password" class="form-control" placeholder="Password" asp-for="Password" autocomplete="off">
+                                </div>
+                                @if (Model.AllowRememberLogin)
+                                {
+                                    <div class="form-group login-remember">
+                                        <label asp-for="RememberLogin">
+                                            <input asp-for="RememberLogin">
+                                            <strong>记住我</strong>
+                                        </label>
+                                    </div>
+                                }
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" value="login">登录</button>
+                                        <a asp-action="register" asp-controller="account" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-default">注册</a>
+                                    </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
